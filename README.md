@@ -17,18 +17,6 @@ A modern personal portfolio website built with **HTML**, **CSS**, and **JavaScri
 - **CSS3** – custom styling, bento grids, colors, responsiveness
 - **JavaScript** – form validation and UI interactivity
 
-##Folder Structure
-portfolio-v2/
-├── index.html
-├── css/
-│ └── styles.css
-├── js/
-│ └── script.js
-├── assets/
-│ └── images, icons, etc.
-└── README.md
-
-
 ##Design Highlights
 
 - **Bento Grid Layout**: Inspired by macOS-style cards, used to display projects and about sections in modular blocks.

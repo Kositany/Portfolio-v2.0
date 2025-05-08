@@ -1,17 +1,18 @@
-// Mobile menu toggle
+//mobile toggle
 const menuToggle = document.getElementById('menu-toggle');
 const menuClose = document.getElementById('menu-close');
 const mobileMenu = document.getElementById('mobile-menu');
 
 menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('active'); // Show menu
     document.body.style.overflow = 'hidden';
 });
 
 menuClose.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('active'); // Hide menu
     document.body.style.overflow = '';
 });
+
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

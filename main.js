@@ -68,3 +68,26 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.bento-item, section').forEach(section => {
     observer.observe(section);
 });
+
+/JavaScript to handle WhatsApp redirect
+    document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent default form submission
+
+        // Collect form values
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // WhatsApp number (use your actual number here with country code, no "+" or leading zeros)
+        const phoneNumber = "254114054247";
+
+        // Construct WhatsApp message
+        const whatsappMessage = `Hello, my name is ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+        // WhatsApp API URL
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+        // Open WhatsApp chat in a new tab
+        window.open(whatsappURL, "_blank");
+    });

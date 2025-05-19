@@ -274,62 +274,59 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title"><span class="text-gradient">Get In Touch</span></h2>
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title"><span class="text-gradient">Get In Touch</span></h2>
 
-            <div class="contact-form">
-                <form action="https://formsubmit.co/kipkosi3@gmail.com" method="POST">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                        </div>
+        <div class="contact-form">
+            <!-- Removed action and method to prevent default form submission -->
+            <form id="whatsapp-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-                    </div>
-            
-                    <!-- Hidden inputs for FormSubmit configuration -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_subject" value="New Contact Form Submission">
-                    
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                </div>
 
-                <div class="contact-info">
-                    <div class="info-container">
-                        <div class="info-details">
-                            <h3>Contact Info</h3>
-                            <p><i class="fas fa-envelope"></i><a href="mailto:kipkosi3@gmail.com">kipkosi3@gmail.com</a></p>
-                            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/Kositany" target="_blank" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/marco-kositany-095447272" target="_blank" class="social-link">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
+                <!-- Submit button triggers JavaScript instead of form action -->
+                <button type="submit" class="submit-btn">Send via WhatsApp</button>
+            </form>
+
+            <div class="contact-info">
+                <div class="info-container">
+                    <div class="info-details">
+                        <h3>Contact Info</h3>
+                        <p><i class="fas fa-envelope"></i><a href="mailto:kipkosi3@gmail.com">kipkosi3@gmail.com</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Kositany" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marco-kositany-095447272" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>

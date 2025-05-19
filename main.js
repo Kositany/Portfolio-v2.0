@@ -80,7 +80,7 @@ document.querySelectorAll('.bento-item, section').forEach(section => {
         const message = document.getElementById("message").value.trim();
 
         // WhatsApp number (use your actual number here with country code, no "+" or leading zeros)
-        const phoneNumber = "254114054247";
+        const phoneNumber = "+254114054247";
 
         // Construct WhatsApp message
         const whatsappMessage = `Hello, my name is ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;

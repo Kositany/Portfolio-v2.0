@@ -70,24 +70,31 @@ document.querySelectorAll('.bento-item, section').forEach(section => {
 });
 
 //JavaScript to handle WhatsApp redirect
-    document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
-        e.preventDefault(); // prevent default form submission
+    document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        // Collect form values
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const subject = document.getElementById("subject").value.trim();
-        const message = document.getElementById("message").value.trim();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-        // WhatsApp number (use your actual number here with country code, no "+" or leading zeros)
-        const phoneNumber = "254114054247";
+    if (!name || !email || !subject || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
 
-        // Construct WhatsApp message
-        const whatsappMessage = `Hello, my name is ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+    // WhatsApp number
+    const phone = "254114054247"; //
 
-        // WhatsApp API URL
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    // Compose the message with line breaks
+    const fullMessage = `Hello, my name is ${name}.\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
 
-        // Open WhatsApp chat in a new tab
-        window.location.href = url;
-    });
+    // Encode for URL
+    const encoded = encodeURIComponent(fullMessage);
+
+    // Create WhatsApp link
+    const url = `https://wa.me/${phone}?text=${encoded}`;
+
+    // Redirect user to WhatsApp
+    window.location.href = url;
+  });

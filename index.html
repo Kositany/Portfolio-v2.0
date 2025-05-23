@@ -4,63 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Kositany | Creative Developer</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Marco Kositany - Creative Frontend Developer crafting immersive digital experiences with modern web technologies. Based in Nairobi, Kenya.">
-    <meta name="keywords" content="Marco Kositany, Front-end Developer, Web Technologies, HTML, CSS, Javascript, UI/UX, Design">
+    <title>Marco Kositany | Creative Frontend Developer in Nairobi, Kenya</title>
+    <meta name="description" content="Marco Kositany is a Nairobi-based Creative Frontend Developer specializing in JavaScript and modern web technologies. Explore my portfolio featuring responsive designs and immersive digital experiences.">
     <meta name="author" content="Marco Kositany">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://marcokositany.me/">
-    <meta property="og:title" content="Marco Kositany | Creative Developer">
-    <meta property="og:description" content="Frontend Developer crafting immersive digital experiences with modern web technologies. Based in Nairobi, Kenya.">
-    <meta property="og:image" content="https://marcokositany.me/1726686951628.jpeg">
-    <meta property="og:site_name" content="Marco Kositany">
-
-
-        <!-- Optimized Open Graph Tags (Including LinkedIn) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://marcokositany.me/">
-    <meta property="og:title" content="Marco Kositany | Creative Frontend Developer">
-    <meta property="og:description" content="Crafting immersive digital experiences with modern web technologies | Frontend Developer based in Nairobi, Kenya">
-    <meta property="og:image" content="https://marcokositany.me/images/og-image-linkedin.jpg">
-    <meta property="og:image:width" content="1200">  <!-- LinkedIn recommends 1200px width -->
-    <meta property="og:image:height" content="627">   <!-- Ideal height for LinkedIn -->
-    <meta property="og:site_name" content="Marco Kositany">
-    <meta property="linkedin:profile" content="https://www.linkedin.com/in/marco-kositany-095447272">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://marcokositany.me">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Marco Kositany | Creative Frontend Developer in Nairobi, Kenya">
+    <meta name="keywords" content="Marco Kositany, Creative, Frontend Developer, Websites, Web Developer, Nairobi, Kenya, Responsive Design, Digital Experiences">
+    <meta property="og:description" content="Marco Kositany is a Nairobi-based Creative Frontend Developer specializing in modern web technologies. Explore my portfolio featuring responsive designs and immersive digital experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marcokositany.me">
+    <meta property="og:image" content="https://marcokositany.me/profile.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Marco Kositany Portfolio">
+
+
+    <!-- GitHub Social Preview -->
+    <meta name="github:title" content="Marco Kositany | Creative Frontend Developer">
+    <meta name="github:description" content="Portfolio of a Nairobi-based frontend developer specializing in JavaScript and modern web technologies.">
+    <meta name="github:image" content="https://marcokositany.me/profile.png">
+
+    <!-- Google / Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marco Kositany",
+        "jobTitle": "Creative Frontend Developer",
+        "url": "https://marcokositany.me",
+        "sameAs": [
+            "https://github.com/Kositany",
+            "https://www.linkedin.com/in/marco-kositany-095447272",
+            "https://www.instagram.com/marco_ko12?igsh=MTgwdnNxZmZsZ3FyNw=="
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "Kenya"
+        }
+    }
+    </script>
     
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    
+    <!-- Preconnect for External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="profile.png">
+    
+    <!-- Stylesheets & Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
      <!-- Navigation -->
-     <nav>
+    <nav aria-label="Main navigation">
         <div class="container nav-container">
-            <a href="#" class="logo text-gradient">MK</a>
+            <a href="#" class="logo text-gradient" aria-label="Home page">MK</a>
             <div class="nav-links">
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+                <a href="#about" class="nav-link" role="menuitem">About</a>
+                <a href="#contact" class="nav-link" role="menuitem">Contact</a>
             </div>
-            <button class="mobile-menu-btn" id="menu-toggle">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-menu-btn" id="menu-toggle"
+                    aria-label="Toggle mobile menu"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false">
+                <i class="fas fa-bars"
+                    aria-label="Toggle mobile menu"
+                    aria-controls="mobile-menu"
+                ></i>
             </button>
+            
         </div>
     </nav>
-
     <!-- Mobile Menu -->
-    <div id="mobile-menu">
+    <div id="mobile-menu" aria-label="mobile-menu">
         <button class="mobile-menu-close" id="menu-close">
             <i class="fas fa-times"></i>
         </button>
@@ -101,7 +126,7 @@
                 <!-- Manage Landing Page -->
                 <div class="bento-item">
                 <div class="image-container">
-                <img src="Screenshot (484).png" alt="">
+                <img src="Screenshot (484).png" alt="Manage-Landing-Page">
                 </div>
                 <div class="bento-content">
                     <i class="fa-solid fa-pager bento-icon"></i>
@@ -125,7 +150,7 @@
                 <!-- Car City -->
                 <div class="bento-item">
                         <div class="image-container">
-                            <img src="Screenshot (488).png" alt="">
+                            <img src="Screenshot (488).png" alt="car-city">
                             </div>
                             <div class="bento-content">
                         <i class="fas fa-car bento-icon"></i>
@@ -145,7 +170,7 @@
                 <!-- Waxxes Animation Studio -->
                 <div class="bento-item">
                         <div class="image-container">
-                            <img src="" alt="">
+                            <img src="Screenshot (528).png" alt="waxxes">
                             </div>
                             <div class="bento-content">
                         <i class="fas fa-film bento-icon"></i>
@@ -165,7 +190,7 @@
                 <!-- Marco Portfolio v1.0 -->
                 <div class="bento-item">
                         <div class="image-container">
-                            <img src="Screenshot (487).png" alt="">
+                            <img src="Screenshot (487).png" alt="Marco portfolio1">
                             </div>
                             <div class="bento-content">
                         <i class="fas fa-user-circle bento-icon"></i>
@@ -185,7 +210,7 @@
                 <!-- Temperature Converter -->
                 <div class="bento-item">
                         <div class="image-container">
-                            <img src="Screenshot (486).png" alt="">
+                            <img src="Screenshot (486).png" alt="temp-converter">
                             </div>
                             <div class="bento-content">
                         <i class="fas fa-temperature-high bento-icon"></i>
@@ -205,7 +230,7 @@
                 <!-- Calculator -->
                 <div class="bento-item">
                         <div class="image-container">
-                            <img src="Screenshot (485).png" alt="">
+                            <img src="Screenshot (485).png" alt="calculator">
                             </div>
                             <div class="bento-content">
                         <i class="fas fa-calculator bento-icon"></i>
@@ -321,7 +346,7 @@
             <a href="https://www.linkedin.com/in/marco-kositany-095447272" target="_blank" class="social-link">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/marco_ko12?igsh=MTgwdnNxZmZsZ3FyNw==" class="social-link">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
